@@ -6,6 +6,6 @@ const app = express();
 connectDB();
 
 app.use(express.json());
-app.use("/api", crawlerRoutes);
+app.use("/api/crawl", require("./routes/crawlerRoutes"));
 
 module.exports = app;
