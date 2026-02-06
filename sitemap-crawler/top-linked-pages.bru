@@ -1,0 +1,19 @@
+meta {
+  name: Top Linked Pages
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/top-linked
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"n": 5}
+}

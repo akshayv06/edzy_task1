@@ -1,0 +1,19 @@
+meta {
+  name: Outgoing Links
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/outgoing
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {"url": "http://www.edzy.ai/news"}
+}
